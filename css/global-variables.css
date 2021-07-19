@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter/Inter-Regular-slnt_2.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter/Inter-SemiBold-slnt_1.woff);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter/Inter-Bold-slnt_1.woff);
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ctn {
+  width: 95%;
+  max-width: 1140px;
+  height: inherit;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+.section-header {
+  width: 80%;
+  max-width: 480px;
+  text-align: center;
+  padding: 0 24px 8px 24px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.8rem;
+}
