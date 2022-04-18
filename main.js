@@ -1,9 +1,11 @@
 import './style.css'
 
-const menuButton = document.querySelector(".menu-toggle");
+const MENUBUTTON = document.querySelector(".menu-toggle");
+const MENU = document.querySelector(".header-nav");
 
 const toggleMenu = () => {
-  menuButton.classList.toggle("open");
+  MENUBUTTON.classList.toggle("open");
+  MENU.classList.toggle("open")
 }
 
-menuButton.addEventListener("click", toggleMenu);
+MENUBUTTON.addEventListener("click", toggleMenu);
