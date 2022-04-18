@@ -167,6 +167,7 @@ header > .container {
   right: 2rem;
   transition: 200ms background-color;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .menu-toggle::before,
@@ -278,7 +279,7 @@ header > .container {
 
 .header-extension {
   margin-left: auto;
-  max-width: 480px;
+  max-width: 400px;
   margin-bottom: 3rem;
 }
 
@@ -290,7 +291,56 @@ header > .container {
   border-radius: 100vh;
 }
 
+.testimonial-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonial-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-700);
+  border-radius: 8px;
+}
+
+.testimonial-container::-webkit-scrollbar {
+  height: 8px;
+  background: none;
+}
+
+.testimonial-item {
+  min-width: 270px;
+  width: min(90vw, 320px);
+  padding: 3rem 1rem;
+  margin: 2rem 1rem;
+  background-color: var(--color-120);
+  border-radius: 8px;
+  scroll-snap-align: center center;
+}
+
+.testimonial-rating {
+  margin: 2rem 0 1rem;
+}
+
+.testimonial-item .name {
+  font-size: 1.7rem;
+}
+
+.testimonials .cta {
+  display: block;
+  margin: 2rem auto;
+  width: fit-content;
+}
+
 @media (min-width: 768px) {
+  .testimonial-container {
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+  }
+
   header > .container {
     min-height: 70vh;
   }
