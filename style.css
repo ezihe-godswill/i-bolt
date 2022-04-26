@@ -189,7 +189,7 @@ header > .container {
   color: var(--color-110);
   background-color: var(--color-700);
   padding: 4rem 2rem;
-  transform: translate3d(120%, 0, 0);
+  transform: translate3d(0, 100%, 0);
   transition: transform 400ms;
   overflow-y: auto;
   z-index: 99;
@@ -216,11 +216,9 @@ header > .container {
 }
 
 .menu-list a:not(.cta) {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: none;
   color: inherit;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .menu-list .cta {
@@ -229,15 +227,13 @@ header > .container {
 }
 
 .menu-socials-list li {
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   list-style: none;
 }
 
 .menu-socials-list a {
   text-decoration: none;
   color: inherit;
-  font-weight: bold;
 }
 
 .menu-toggle {
